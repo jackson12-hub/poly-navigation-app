@@ -1,1 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#map-container {
+  position: relative;
+  width: fit-content;
+}
+
+#college-map {
+  width: 600px;
+  border: 2px solid black;
+  cursor: crosshair;
+}
+
+.marker {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#coords {
+  font-weight: bold;
+  margin-top: 10px;
+}
 
