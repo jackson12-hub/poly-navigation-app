@@ -6,12 +6,31 @@
 </head>
 <body>
   <h1>College Navigation App</h1>
-  <div id="map-container">
-  <img id="poly-map" src="map/poly-map.png" alt="poly Map">
-</div>
 
-<p id="coords">Click on the map to add a building</p>
+  <div id="container">
+    <div id="sidebar">
+      <h2>Buildings</h2>
+      <ul id="building-list"></ul>
+      <hr>
+      <p>Pick Start and End:</p>
+      <select id="start">
+        <option value="">Select Start</option>
+      </select>
+      <select id="end">
+        <option value="">Select End</option>
+      </select>
+      <button id="route-btn">Show Route</button>
+    </div>
+
+    <div id="map-container">
+      <img id="college-map" src="map/college-map.png" alt="College Map">
+    </div>
+  </div>
+
+  <p id="coords">Click on map to add buildings</p>
+
   <script src="script.js"></script>
 </body>
+
 </html>
 
