@@ -26,4 +26,38 @@ body {
   font-weight: bold;
   margin-top: 10px;
 }
+#map-container {
+    position: relative;
+    display: inline-block;
+}
+
+#map {
+    width: 800px;
+}
+
+#route-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.marker {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.highlight {
+    background-color: red;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
 
