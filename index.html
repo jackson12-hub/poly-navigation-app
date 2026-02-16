@@ -5,32 +5,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Poly Navigation App</h1>
 
-  <div id="container">
-    <div id="sidebar">
-      <h2>Buildings</h2>
-      <ul id="building-list"></ul>
-      <hr>
-      <p>Pick Start and End:</p>
-      <select id="start">
+<h1>Poly Navigation App</h1>
+
+<div id="controls">
+    <select id="start">
         <option value="">Select Start</option>
-      </select>
-      <select id="end">
-        <option value="">Select End</option>
-      </select>
-      <button id="route-btn">Show Route</button>
-    </div>
+    </select>
 
-    <div id="map-container">
-      <img id="college-map" src="map/college-map.png" alt="College Map">
-    </div>
-  </div>
+    <select id="end">
+        <option value="">Select Destination</option>
+    </select>
 
-  <p id="coords">Click on map to add buildings</p>
+    <button onclick="drawRoute()">Navigate</button>
+</div>
 
-  <script src="script.js"></script>
+<div id="map-container">
+    <img src="poly-map.png" id="map">
+    <svg id="route-layer"></svg>
+</div>
+
+<script src="script.js"></script>
 </body>
+
 
 </html>
 
